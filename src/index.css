@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 20px;
+}
+
+nav {
+  list-style: none;
+  padding-left: 80px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header-right div {
+  display: inline-block;
+  padding: 10px;
+}
+
+section .main {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+}
+
+section .container {
+  width: 1200px;
+  margin: 0 80px;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+select {
+  padding: 5px 100px 5px 0px;
+}
+
+section.products {
+  display: flex;
+  background-color: #d1d1d1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-panel {
+  width: 1200px;
+  padding: 40px 0;
+}
+
+.product {
+  display: inline-block;
+  width: 33.33%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 200px;
+  max-height: 200px;
+  padding-bottom: 20px;
+}
+
+.product h4,
+.product p,
+.product button {
+  padding-bottom: 10px;
+}
+
+.product button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgba(54, 54, 54, 1);
+  color: #fff;
+}
+
+.product button:hover {
+  background-color: rgba(54, 54, 54, 0.7);
 }
